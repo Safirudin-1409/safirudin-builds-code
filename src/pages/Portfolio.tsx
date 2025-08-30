@@ -23,7 +23,7 @@ const Portfolio = () => {
       id: 2,
       title: "AI-Powered Career Coach",
       description: "An intelligent career guidance platform that uses AI to help users with career planning, job preparation, and skill development recommendations.",
-      technologies: ["Next.js", "Node.js", "Python", "Machine Learning", "PostgreSQL", "REST API"],
+      technologies: ["Next.js", "Node.js", "PostgreSQL", "REST API"],
       features: [
         "AI-driven career recommendations",
         "Skill gap analysis and suggestions",
