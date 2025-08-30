@@ -14,13 +14,11 @@ const Home = () => {
 
       <div className="container mx-auto px-6 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
-          <div className="w-40 h-40 mx-auto mb-8 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center overflow-hidden fade-in">
-            <img 
-              src="/lovable-uploads/bf4ac433-2092-4540-bdeb-fef1af289789.png" 
-              alt="Safirudin K M - Full-Stack Developer"
-              className="w-full h-full object-cover rounded-full"
-            />
+          {/* Profile Avatar */}
+          <div className="w-40 h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary via-purple-500 to-pink-500 border-4 border-white/30 flex items-center justify-center shadow-glow fade-in">
+            <div className="text-white font-bold text-4xl">
+              SK
+            </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in stagger-1">

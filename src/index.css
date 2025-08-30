@@ -12,15 +12,15 @@
     --background: 0 0% 100%;
     --foreground: 224 15% 15%;
     
-    /* Tech-inspired Primary Colors */
-    --primary: 210 100% 50%;
+    /* Tech-inspired Primary Colors - More Vibrant */
+    --primary: 245 101% 57%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 210 100% 96%;
+    --primary-soft: 245 101% 96%;
     
-    /* Modern Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(195 100% 45%) 100%);
-    --gradient-tech: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(240 100% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 10% 98%) 100%);
+    /* Modern Gradients - More Appealing */
+    --gradient-hero: linear-gradient(135deg, hsl(245 101% 57%) 0%, hsl(270 95% 60%) 50%, hsl(300 85% 65%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(245 101% 57%) 0%, hsl(270 95% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(245 20% 98%) 100%);
     
     /* Professional Neutrals */
     --neutral-50: 220 20% 98%;
@@ -63,11 +63,11 @@
     --input: 220 13% 90%;
     --ring: 210 100% 50%;
     
-    /* Shadows & Effects */
-    --shadow-soft: 0 2px 8px hsl(220 15% 15% / 0.08);
-    --shadow-medium: 0 8px 25px hsl(220 15% 15% / 0.12);
-    --shadow-strong: 0 25px 50px hsl(220 15% 15% / 0.15);
-    --shadow-glow: 0 0 40px hsl(210 100% 50% / 0.3);
+    /* Shadows & Effects - Enhanced */
+    --shadow-soft: 0 2px 8px hsl(245 101% 57% / 0.08);
+    --shadow-medium: 0 8px 25px hsl(245 101% 57% / 0.12);
+    --shadow-strong: 0 25px 50px hsl(245 101% 57% / 0.15);
+    --shadow-glow: 0 0 40px hsl(245 101% 57% / 0.4);
     
     /* Spacing & Layout */
     --radius: 12px;
