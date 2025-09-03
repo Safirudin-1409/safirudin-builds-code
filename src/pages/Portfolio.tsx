@@ -17,7 +17,9 @@ const Portfolio = () => {
       ],
       category: "FullStack",
       icon: MessageCircle,
-      gradient: "from-blue-500 to-purple-600"
+      gradient: "from-blue-500 to-purple-600",
+      livelink: "https://chat-app-client-jwik.onrender.com",
+      githublink: "https://github.com/Safirudin-1409/Chat-app"
     },
     {
       id: 2,
@@ -31,9 +33,11 @@ const Portfolio = () => {
         "Job market insights and trends",
         "Personalized learning paths"
       ],
-      category: "AI/ML",
+      category: "FullStack",
       icon: Brain,
-      gradient: "from-green-500 to-teal-600"
+      gradient: "from-green-500 to-teal-600",
+      livelink : "https://elevate-ai-puce.vercel.app/",
+      githublink: "https://github.com/Safirudin-1409/ElevateAI"
     }
   ];
 
@@ -144,90 +148,23 @@ const Portfolio = () => {
 
                     {/* Action Buttons */}
                     <div className="flex space-x-4">
-                      <Button className="btn-hero" size="lg">
-                        <ExternalLink className="w-5 h-5 mr-2" />
-                        Live Demo
-                      </Button>
-                      <Button className="btn-hero-outline" size="lg">
-                        <Github className="w-5 h-5 mr-2" />
-                        Source Code
-                      </Button>
+                      <a href={project.livelink} target="_blank" rel="noopener noreferrer">
+                        <Button className="btn-hero" size="lg">
+                          <ExternalLink className="w-5 h-5 mr-2" />
+                          Live Demo
+                        </Button>
+                      </a>
+                      <a href={project.githublink} target="_blank" rel="noopener noreferrer">
+                        <Button className="btn-hero-outline" size="lg">
+                          <Github className="w-5 h-5 mr-2" />
+                          Source Code
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Future Projects */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-neutral-800 mb-4 fade-in">
-              Future <span className="text-gradient">Concepts</span>
-            </h2>
-            <p className="text-lg text-neutral-600 fade-in stagger-1">
-              Exciting projects in development and planning stages
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {futureConcepts.map((concept, index) => (
-              <div
-                key={index}
-                className={`card-modern group border-2 border-dashed border-neutral-300 hover:border-primary/50 fade-in stagger-${index + 1}`}
-              >
-                <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-soft transition-colors duration-300">
-                  <concept.icon className="w-6 h-6 text-neutral-600 group-hover:text-primary" />
-                </div>
-                
-                <h3 className="text-xl font-bold text-neutral-800 mb-3">
-                  {concept.title}
-                </h3>
-                
-                <p className="text-neutral-600 mb-4">
-                  {concept.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2">
-                  {concept.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-md text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="card-gradient fade-in">
-              <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Interested in Working Together?
-              </h2>
-              <p className="text-lg text-neutral-600 mb-8">
-                I'm always excited to take on new challenges and collaborate on innovative projects. 
-                Let's discuss how we can bring your ideas to life.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="btn-hero" size="lg">
-                  Start a Project
-                </Button>
-                <Button className="btn-hero-outline" size="lg">
-                  View More Work
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

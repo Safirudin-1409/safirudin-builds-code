@@ -102,18 +102,9 @@ const Skills = () => {
                         <span className="font-semibold text-neutral-700">
                           {skill.name}
                         </span>
-                        <span className="text-sm text-neutral-500 font-medium">
-                          {skill.level}%
-                        </span>
+                        
                       </div>
-                      <div className="skill-bar">
-                        <div
-                          className="skill-progress"
-                          style={{
-                            width: animatedBars ? `${skill.level}%` : "0%"
-                          }}
-                        />
-                      </div>
+                      
                     </div>
                   ))}
                 </div>

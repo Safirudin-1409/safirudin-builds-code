@@ -29,7 +29,7 @@ const Navigation = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume
     const link = document.createElement('a');
-    link.href = '/safirudin-resume.pdf'; // You would need to add this file to public folder
+    link.href = '/Safirudin_Resume.pdf'; // You would need to add this file to public folder
     link.download = 'Safirudin_KM_Resume.pdf';
     link.click();
   };
